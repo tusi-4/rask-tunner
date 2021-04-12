@@ -174,3 +174,37 @@ footer {
 	border-radius: 50%;
 	margin: 0 6px 0 6px;
 }
+
+@media (max-width: 991px) {
+	nav {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	}
+	.navright {
+	font-size: 10px;
+	text-align: center;
+	}
+	.splash-inner {
+	transform: translateY(-33%);
+	}
+	.home h1 {
+	font-size: 30px;
+	font-style: italic;
+	color: #ffffff;
+	margin: 12px auto;
+	}
+	.home h2 {
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 48px;
+	color: #ffffff;
+	margin: 24px auto;
+	}
+	.services-card {
+	padding-bottom: 48px;
+	}
+	.copyright {
+		margin-bottom: 36px;
+	}
+}
