@@ -10,7 +10,7 @@ body {
 	line-height: 1.7;
 	font-family: 'Roboto Slab', serif;
 }
-/* Splash */
+/* Header */
 .splash {
 	height: 100vh;
 	position: relative;
@@ -19,35 +19,34 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
  }
-.splash-inner {
-	position: absolute;
+.top-menu {
 	width: 100%;
-	top: 50%;
-	transform: translateY(-25%);
- }
-nav {
 	display: flex;
-	max-width: 1140px;
-	margin: auto;
-	align-items: center;
-	transform: translateY(24px);
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 48px;
 }
-.navleft, .navright {
-	flex: 1;
-	text-align: left;
-}
-.navright ul {
+.navigation ul {
 	list-style-type: none;
+	margin: 0;
 }
-.navright li {
-	display: inline-block;
-	margin-right: 36px;
+.navigation li {
+	display: inline;
+	margin-left: 36px;
 }
-.navright li a {
+.navigation li a {
 	font-family: Montserrat;
 	font-size: 14px;
 	color: #ffffff;
 	text-decoration: none;
+}
+.home {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -25%);
 }
 .home h1 {
 	font-family: 'Roboto Slab';
@@ -176,17 +175,9 @@ footer {
 }
 
 @media (max-width: 991px) {
-	nav {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 24px;
-	}
-	.navright {
-	font-size: 10px;
-	text-align: center;
-	}
-	.splash-inner {
-	transform: translateY(-33%);
+	.navigation li {
+	display: block;
+	text-align: right;
 	}
 	.home h1 {
 	font-size: 30px;
